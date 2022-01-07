@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<update id ="readcountUpdate">
+	update board set readcount=readcount+1 where num = #{num}
+</update>
+
+<select id="getArticle" resultType="com.project">
+	select* from board where num = #{num}
+
+</select>
+
+<select id="passwardCheck" resultType="com.project">
+	select* from board where num = #{num}
+
+</select>
+
+	<update id="updateArticle">
+	update board set
+		writer=#{writer},
+		
